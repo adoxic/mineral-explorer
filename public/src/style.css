@@ -1,7 +1,7 @@
 /* 
 Lilac  #A5A9CE
 graphite #4F4F4F
-ube #CC99E5
+med grey #333333
 white smoke #F7F7F7
 */
 p {
@@ -17,7 +17,6 @@ p {
     body {
         display: flex;
         flex-direction: column;
-        color: #4F4F4F;
     }
 
     header {
@@ -25,7 +24,7 @@ p {
         background-color: #A5A9CE;
         font-size: 1.4em;
         padding: 0.4em;
-        border: 0.3em solid #F1E3F7;
+        border: 0.3em solid #333333;
         border-radius: 6px;
         
     }
@@ -42,7 +41,7 @@ p {
         background-color: #A5A9CE;
         font-size: 1.4em;
         padding: 0.4em;
-        border: 0.3em solid  #F1E3F7;
+        border: 0.3em solid  #333333;
         border-radius: 6px;
     }
     .cards {
@@ -63,7 +62,7 @@ p {
 
     li p {
         background-color: #A5A9CE;
-        border: 0.3em solid  #F1E3F7;
+        border: 0.3em solid  #333333;
         border-radius: 6px;
         margin: .2em;
     }
@@ -85,13 +84,14 @@ p {
         flex-direction: column;
         justify-content: center; 
         width: 80vw;
-        border: solid 0.4em  #F1E3F7;
+        border: solid 0.4em  #333333;
         border-radius: 0.2em;
     }
     .hidden {
         display: none;
     }
     img {
+        padding: .2em;
         margin: auto;
         width: 80vw;
     }
@@ -107,7 +107,7 @@ p {
     body {
         display: flex;
         flex-direction: column;
-        color: #4F4F4F;
+    
     }
 
     header {
@@ -115,7 +115,7 @@ p {
         background-color: #A5A9CE;
         font-size: 1.4em;
         padding: 0.4em;
-        border: 0.3em solid #F1E3F7;
+        border: 0.3em solid #333333;
         border-radius: 6px;
         
     }
@@ -132,7 +132,7 @@ p {
         background-color: #A5A9CE;
         font-size: 1.4em;
         padding: 0.4em;
-        border: 0.3em solid  #F1E3F7;
+        border: 0.3em solid  #333333;
         border-radius: 6px;
     }
     .cards {
@@ -153,7 +153,7 @@ p {
 
     li p {
         background-color: #A5A9CE;
-        border: 0.3em solid  #F1E3F7;
+        border: 0.3em solid  #333333;
         border-radius: 6px;
         margin: .2em;
     }
@@ -167,13 +167,14 @@ p {
         flex-direction: column;
         justify-content: center; 
         width: 40vw;
-        border: solid 0.4em  #F1E3F7;
+        border: solid 0.4em  #333333;
         border-radius: 0.2em;
     }
     .hidden {
         display: none;
     }
     img {
+        padding: .2em;
         margin: auto;
         width: 40vw;
     }
@@ -188,7 +189,6 @@ p {
     body {
         display: flex;
         flex-direction: column;
-        color: #4F4F4F;
     }
 
     header {
@@ -196,7 +196,7 @@ p {
         background-color: #A5A9CE;
         font-size: 1.4em;
         padding: 0.4em;
-        border: 0.3em solid #F1E3F7;
+        border: 0.3em solid #333333;
         border-radius: 6px;
         
     }
@@ -213,7 +213,7 @@ p {
         background-color: #A5A9CE;
         font-size: 1.4em;
         padding: 0.4em;
-        border: 0.3em solid  #F1E3F7;
+        border: 0.3em solid  #333333;
         border-radius: 6px;
     }
 
@@ -230,7 +230,7 @@ p {
 
     li p {
         background-color: #A5A9CE;
-        border: 0.3em solid  #F1E3F7;
+        border: 0.3em solid  #333333;
         border-radius: 6px;
         margin: .2em;
     }
@@ -251,13 +251,14 @@ p {
         flex-direction: column;
         justify-content: center; 
         width: 20vw;
-        border: solid 0.4em  #F1E3F7;
+        border: solid 0.4em  #333333;
         border-radius: 0.2em;
     }
     .hidden {
         display: none;
     }
     img {
+        padding: .2em;
         margin: auto;
         width: 20vw;
     }

@@ -1,4 +1,4 @@
-const minerals = [
+module.exports = [
     {
         name: 'quarts',
         clear: true,
@@ -40,5 +40,3 @@ const minerals = [
         imgSrc: './src/assets/pyrite.jpg'
     },
 ];
-
-export default minerals;
