@@ -5,6 +5,7 @@ import { getMinerals } from '../../src/services/mineral-api.js';
 
 class App extends Component {
     onRender(dom) {
+        
         const header = new Header;
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
