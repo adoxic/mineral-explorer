@@ -25,13 +25,15 @@ app.use(express.json());
 app.get('/api/minerals', (req, res) => {
     client.query(`
         SELECT
-            id,
-            name,
-            clear,
-            color,
-            density,
-            img_src
-        FROM minerals 
+            m.name,
+            m.clear,
+            m.color,
+            t.name as type,
+            m.density,
+            m.img_src
+        FROM minerals m
+        JOIN types t
+        ON m.type = t.id 
         ORDER BY density;
     `)
 

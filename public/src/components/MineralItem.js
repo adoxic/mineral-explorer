@@ -11,7 +11,7 @@ class MineralItem extends Component {
             <p>color: ${mineral.color}</p>
             <p>clear: ${mineral.clear}</p>
             <p>density: ${mineral.density}</p>
-            <p>type: ${mineral.density}</p>
+            <p>type: ${mineral.type}</p>
         </li>
         `;
     }

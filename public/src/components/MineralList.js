@@ -4,7 +4,7 @@ import MineralItem from './MineralItem.js';
 class MineralList extends Component {
     onRender(dom) {
         const minerals = this.props.minerals;
-
+        console.log(this.props);
         minerals.forEach(mineral => {
             const props = { mineral: mineral };
             const mineralItem = new MineralItem(props);
