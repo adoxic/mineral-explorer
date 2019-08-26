@@ -14,7 +14,7 @@ p {
         overflow: scroll;
     }
 
-    body {
+    #root {
         display: flex;
         flex-direction: column;
     }
@@ -104,10 +104,10 @@ p {
         overflow: scroll;
     }
 
-    body {
+    #root {
         display: flex;
         flex-direction: column;
-    
+        flex-wrap: wrap;
     }
 
     header {
@@ -186,9 +186,10 @@ p {
         overflow: scroll;
     }
 
-    body {
+    #root {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     header {

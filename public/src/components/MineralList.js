@@ -17,7 +17,7 @@ class MineralList extends Component {
     renderHTML() {
         
         return /*html*/`
-            <ul class="minerals"></ul>
+            <ul class="cards"></ul>
         `;
     }
 }
