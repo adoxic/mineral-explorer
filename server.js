@@ -38,8 +38,7 @@ app.get('/api/minerals', (req, res) => {
     `)
 
         .then(result => {
-            console.log(res.json(result.rows));
-            res.json(res.rows);
+            res.json(result.rows);
         })
         .catch(err => {
             res.status(500).json({

@@ -26,17 +26,7 @@ class App extends Component {
         return /*html*/`
         <div>
         <!-- header goes here -->
-            <div class="nav">
-                <form class="search">
-                </form>
-                <div class="sort">
-                    <p>Filter Minerals by Type</p>
-                    <section class="filter">
-                    </section>
-                </div>
-            </div>
             <main>
-                <section class="options-section"></section>
                 <section class="list-section"></section>
             </main>
         </div>

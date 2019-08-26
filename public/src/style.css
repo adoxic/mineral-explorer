@@ -8,6 +8,30 @@ p {
    padding: .2em;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    text-align: start;
+    margin: auto;
+}
+
+form p {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+}
+
+form input {
+   width: 36vw;
+}
+
+.submit {
+    background-color: #333333;
+    color: #CCCCCC;
+    margin-top: 1.5em;
+    border-color: #4F4F4F
+}
+
 @media all and (max-width: 500px){
     html {
         background-color: #F7F7F7;
