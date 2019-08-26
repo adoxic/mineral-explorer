@@ -17,7 +17,7 @@ class App extends Component {
 
         getMinerals()
             .then(minerals => {
-                list.update({ mineral: minerals });
+                list.update({ minerals });
             });
             
 

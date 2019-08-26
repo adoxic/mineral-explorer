@@ -1,9 +1,10 @@
-const BASE_URL = '/api/minerals';
+const BASE_URL = '/api';
 
 export function getMinerals() {  
-    const url = `${BASE_URL}`;
+    const url = `${BASE_URL}/minerals`;
+
     return fetch(url)
-        .then(response => response.json());
+        .then(res => res.json());
 
 }
 
