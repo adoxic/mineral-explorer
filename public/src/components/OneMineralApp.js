@@ -1,9 +1,9 @@
 import Component from '../Component.js';
 import Header from '../components/Header.js';
-import MineralList from './MineralList.js';
-import { getMinerals } from '../../src/services/mineral-api.js';
+import OneMineral from './OneMineral.js';
+import { getMineral } from '../../src/services/mineral-api.js';
 
-class App extends Component {
+class OneMineralApp extends Component {
     onRender(dom) {
         
         const header = new Header;
@@ -11,11 +11,11 @@ class App extends Component {
         dom.prepend(headerDOM);
         
         const listSection = dom.querySelector('.list-section');
-        const list = new MineralList({ minerals: [] });
+        const list = new OneMineral({ minerals: [] });
         const listDOM = list.renderDOM();
         listSection.appendChild(listDOM);
 
-        getMinerals()
+        getMineral(1)
             .then(minerals => {
                 list.update({ minerals });
             });
@@ -34,4 +34,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default OneMineralApp;

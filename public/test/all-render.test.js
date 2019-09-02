@@ -9,9 +9,9 @@ test('renders header', assert => {
     const expected = /*html*/`    <header class="header">
     <h1>Welcome to the Mineral Library</h1>
     <nav class="nav">
-        <p>Home</p>
-        <p>Library</p>
-        <p>Submit Mineral</p>
+    <a href="./index.html">Home</a>
+    <a href="./submit.html">Submit a Mineral</a>
+    <a href="./view-one.html">Detail View</a>
     </nav>
 </header>`;
 

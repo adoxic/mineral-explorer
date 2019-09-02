@@ -1,10 +1,9 @@
 import Component from '../Component.js';
 import MineralItem from './MineralItem.js';
 
-class MineralList extends Component {
+class OneMineral extends Component {
     onRender(dom) {
         const minerals = this.props.minerals;
-        console.log(this.props);
         minerals.forEach(mineral => {
             const props = { mineral: mineral };
             const mineralItem = new MineralItem(props);
@@ -22,4 +21,4 @@ class MineralList extends Component {
     }
 }
 
-export default MineralList;
+export default OneMineral;

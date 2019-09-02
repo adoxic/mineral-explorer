@@ -7,11 +7,11 @@ class MineralItem extends Component {
         return /*html*/`
         <li class="card">
             <h2>${mineral.name}</h2>
-            <img src="${mineral.imgSrc}">
+            <img src="${mineral.img_src}">
             <p>color: ${mineral.color}</p>
             <p>clear: ${mineral.clear}</p>
             <p>density: ${mineral.density}</p>
-            <p>type: ${mineral.density}</p>
+            <p>type: ${mineral.type}</p>
         </li>
         `;
     }

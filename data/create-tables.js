@@ -20,7 +20,7 @@ client.connect()
                 clear BOOLEAN NOT NULL,
                 color VARCHAR(256) NOT NULL,
                 density DECIMAL(10,2) NOT NULL,
-                type VARCHAR(256) NOT NULL,
+                type INTEGER NOT NULL REFERENCES types(id),
                 img_src VARCHAR(256) NOT NULL
             );
             
