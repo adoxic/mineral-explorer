@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 require('dotenv').config();
 
 // Application Dependencies
@@ -46,6 +47,77 @@ app.get('/api/minerals', (req, res) => {
             });
         });
 });
+
+app.get('/api/minerals/:id', (req, res) => {
+    const id = req.params.id;
+
+    client.query(`
+        SELECT
+            m.*,
+            t.name as type
+        FROM minerals m
+        JOIN types t
+        ON   m.type = t.id
+        WHERE m.id = $1;
+    `,
+    [id]
+    )
+        .then(result => {
+            const mineral = result.rows;
+            if(!mineral) {
+                res.status(404).json({
+                    error: `Mineral id ${id} does not exist`
+                });
+            }
+            else {
+                res.json(result.rows);
+            }
+        })
+        .catch(err => {
+            res.status(500).json({
+                error: err.message || err
+            });
+        });
+});
+
+app.post('/api/minerals', (req, res) => {
+    const mineral = req.body;
+    console.log(req.body);
+    client.query(`
+        INSERT INTO minerals (name, clear, color, density, type, img_src)
+        VALUES ($1, $2, $3, $4, $5, $6)
+        RETURNING *;
+    `,
+    [mineral.name, mineral.clear, mineral.color, mineral.density, mineral.type, mineral.imgSrc]
+    )
+        .then(result => {
+            console.log('result');
+            res.json(result.rows[0]);
+        })
+        .catch(err => {
+            res.status(500).json({
+                error: err.message || err
+            });
+        });
+});
+
+app.get('/api/types', (req, res) => {
+    client.query(`
+        SELECT
+            id,
+            name
+        FROM types;
+    `)
+        .then(result => {
+            res.json(result.rows);
+        })
+        .catch(err => {
+            res.status(500).json({
+                error: err.message || err
+            });
+        });
+});
+
 
 app.listen(PORT, () => {
     console.log('server running on PORT', PORT);

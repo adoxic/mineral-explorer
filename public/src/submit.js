@@ -1,8 +1,8 @@
 import SubmitApp from './components/SubmitApp.js';
 
 const root = document.getElementById('root');
-const app = new SubmitApp();
+const submitApp = new SubmitApp();
 
-const dom = app.renderDOM();
+const dom = submitApp.renderDOM();
 
 root.appendChild(dom);

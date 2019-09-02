@@ -8,9 +8,35 @@ export function getMinerals() {
 
 }
 
-
 export function getMineral(name) {  
-    const url = `${URL}/${name}`;
+    const url = `${BASE_URL}/minerals/${name}`;
+    return fetch(url)
+        .then(response => response.json());
+}
+
+export function addMineral(mineral) {
+    const url = `${BASE_URL}/minerals`;
+    return fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(mineral)
+    })
+        .then(response => {
+            if(response.ok) {
+                return response.json();
+            }
+            else {
+                return response.json().then(json => {
+                    throw json.error;
+                });
+            }
+        });
+}
+
+export function getTypes() {
+    const url = `${BASE_URL}/types`;
     return fetch(url)
         .then(response => response.json());
 }
